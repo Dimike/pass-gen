@@ -4,10 +4,81 @@ glas=["a", "e", "i", "o", "u", "y"]
 
 soglas=["b", "d", "g", "v", "m", "n", "w", "l", "r", "j", "d", "z", "g", "p", "t", "k", "f", "s", "c", "h"]
 
+puts "Select pass length (1-4)"
+choice = gets.chomp.to_i
+
+case choice
+when 1
+
+1.times do
 
 
+x=rand(5)
+
+case x
+
+when 0
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)]
+when 1
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)].capitalize
+print soglas[rand(soglas.size)]
+when 2
+print soglas[rand(soglas.size)].capitalize
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)]
+when 3
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)].capitalize
+when 4
+print soglas[rand(soglas.size)].capitalize
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)].capitalize
+when 5
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)].capitalize
+print soglas[rand(soglas.size)].capitalize
+end
+end
+when 2
+
+2.times do
 
 
+x=rand(5)
+
+case x
+
+when 0
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)]
+when 1
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)].capitalize
+print soglas[rand(soglas.size)]
+when 2
+print soglas[rand(soglas.size)].capitalize
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)]
+when 3
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)].capitalize
+when 4
+print soglas[rand(soglas.size)].capitalize
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)].capitalize
+when 5
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)].capitalize
+print soglas[rand(soglas.size)].capitalize
+end
+end
+when 3
 
 3.times do
 
@@ -40,7 +111,43 @@ when 5
 print soglas[rand(soglas.size)]
 print glas[rand(glas.size)].capitalize
 print soglas[rand(soglas.size)].capitalize
-
-
 end
+end
+when 4
+
+4.times do
+
+
+x=rand(5)
+
+case x
+
+when 0
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)]
+when 1
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)].capitalize
+print soglas[rand(soglas.size)]
+when 2
+print soglas[rand(soglas.size)].capitalize
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)]
+when 3
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)].capitalize
+when 4
+print soglas[rand(soglas.size)].capitalize
+print glas[rand(glas.size)]
+print soglas[rand(soglas.size)].capitalize
+when 5
+print soglas[rand(soglas.size)]
+print glas[rand(glas.size)].capitalize
+print soglas[rand(soglas.size)].capitalize
+end
+end
+else
+print "Repeat your choice (1-4)"
 end
