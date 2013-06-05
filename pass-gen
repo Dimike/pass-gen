@@ -1,15 +1,12 @@
 puts "Select pass length (1-4)"
-
 choice = gets.chomp.to_i
 
 def randomize()
  glas=["a", "e", "i", "o", "u", "y"]
-
  soglas=["b", "d", "g", "v", "m", "n", "w", "l", "r", "j", "d", "z", "g", "p", "t", "k", "f", "s", "c", "h"]
 x=rand(5)
 
  case x
-
   when 0
    print soglas[rand(soglas.size)]
    print glas[rand(glas.size)]
@@ -40,26 +37,9 @@ x=rand(5)
 end
 
 case choice
-  when 1
-
-   1.times do
-    randomize
-  end
-  when 2
-
-   2.times do
-    randomize
-  end
-  when 3
-
-   3.times do
-    randomize
-  end
-  when 4
-
-   4.times do
-    randomize
-  end
-  else
-    print "Repeat your choice (1-4)"
+  when 1 then 1.times do randomize end
+  when 2 then 2.times do randomize end
+  when 3 then 3.times do randomize end
+  when 4 then 4.times do randomize end
+  else print "Repeat your choice (1-4)
 end
