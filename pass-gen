@@ -63,8 +63,3 @@ case choice
   else
     print "Repeat your choice (1-4)"
 end
-
-
-
-
-
