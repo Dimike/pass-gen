@@ -7,32 +7,13 @@ def randomize()
 x=rand(5)
 
  case x
-  when 0
-   print soglas[rand(soglas.size)]
-   print glas[rand(glas.size)]
-   print soglas[rand(soglas.size)]
-  when 1
-   print soglas[rand(soglas.size)]
-   print glas[rand(glas.size)].capitalize
-   print soglas[rand(soglas.size)]
-  when 2
-   print soglas[rand(soglas.size)].capitalize
-   print glas[rand(glas.size)]
-   print soglas[rand(soglas.size)]
-  when 3
-   print soglas[rand(soglas.size)]
-   print glas[rand(glas.size)]
-   print soglas[rand(soglas.size)].capitalize
-  when 4
-   print soglas[rand(soglas.size)].capitalize
-   print glas[rand(glas.size)]
-   print soglas[rand(soglas.size)].capitalize
-  when 5
-   print soglas[rand(soglas.size)]
-   print glas[rand(glas.size)].capitalize
-   print soglas[rand(soglas.size)].capitalize
-  else
-   puts "Error!"
+  when 0 then print "#{soglas[rand(soglas.size)]}#{glas[rand(glas.size)]}#{soglas[rand(soglas.size)]}"
+  when 1 then print "#{soglas[rand(soglas.size)]}#{glas[rand(glas.size)].capitalize}#{soglas[rand(soglas.size)]}"
+  when 2 then print "#{soglas[rand(soglas.size)].capitalize}#{glas[rand(glas.size)]}#{soglas[rand(soglas.size)]}"
+  when 3 then print "#{soglas[rand(soglas.size)]}#{glas[rand(glas.size)]}#{soglas[rand(soglas.size)].capitalize}"
+  when 4 then print "#{soglas[rand(soglas.size)].capitalize}#{glas[rand(glas.size)]}#{soglas[rand(soglas.size)].capitalize}"
+  when 5 then print "#{soglas[rand(soglas.size)]}#{glas[rand(glas.size)].capitalize}#{soglas[rand(soglas.size)].capitalize}"
+  else print "Error!"
  end
 end
 
@@ -41,5 +22,5 @@ case choice
   when 2 then 2.times do randomize end
   when 3 then 3.times do randomize end
   when 4 then 4.times do randomize end
-  else print "Repeat your choice (1-4)
+  else print "Repeat your choice (1-4)"
 end
